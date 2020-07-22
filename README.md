@@ -33,11 +33,17 @@ Much similar to the YouTube API, this Giphy API simply grabs the arguments from 
 
 As you can see, they are different gifs.
 
+**Weather** 
+
+The weather command works with the node module **weather-js** and simply pulls the weather from a certain city. Below is a screenshot showing this in action, and showing how dynamic it is when it comes to the icon, the temp, and more.
+
+![](https://github.com/CrossFIRE121/AYSHackathon2020/blob/master/screencap5.png)
+
 **8Ball, RPS, and others**
 
 Most of these extra commands use the Math aspect of Discord.JS, meaning that if you were to put in three values, such as 1, 2, and 3 per se, the Math code would randomly chose one of these, and as an 8Ball does such, so does the bot.
 
 # Hosting!
-Hosting a discord bot is a very important aspect of its uptime. Whether or not you're using AWS, Heroku, Cloud9, SkySilk, or others, these hosts make it very easy for you to have your discord bot running 24/7. My personal discord bot, along with this one, are being hosted by my Amazon EC2 instance. This instance is an Ubuntu 18.04 LTS build, and utilizes 1 core of processing power along with one gigabyte of RAM. The terminal is used for the VPS, and using PM2.
+Hosting a discord bot is a very important aspect of its uptime. Whether or not you're using AWS, Heroku, Cloud9, SkySilk, or others, these hosts make it very easy for you to have your discord bot running 24/7. My personal discord bot, along with this one, are being hosted by my Amazon EC2 instance. This instance is an Ubuntu 18.04 LTS build, and utilizes 1 core of processing power along with one gigabyte of RAM. The terminal is used for the VPS, and using PM2 to make sure when the bot crashes, if it were to, that it would restart the bot to keep alive. Since its Ubuntu and its a VPS, its very adaptive and doesnt suffer from limitations from node modules and packages. Since its considered a SFTP server by FileZilla, by accessing it from the .pem file given to me by Amazon, it is more than easy to add files to the server's SSD. I then can use the terminal on my computer to access the vps from the .pem file and control things such as node modules, pm2, and others. It is essentially another VPS and it is very easy to use if you know what you are doing.
 
 
