@@ -11,3 +11,6 @@ A few of these commands use API calls to utilize themselves, I will explain belo
 
 Sadly the Cleverbot API became a pay-to-use service a while back, luckily anyone that had used the API before it was pay-to-use was still able to use it for free. The essential messages behind the API come from the **cleverbot-node** NodeJS package and for it to work, it requires the API key in the configuration. The code I use does nothing to effect the messages, since the messages you send are sent to the API and then it sends a message back that is somewhat similar to what you wrote. It is almost like you are chatting with an AI, but more dysfunctional. One issue I suffered with this was the bot constantly talking to itself. Below is a screenshot linking to this issue.
 
+![](https://github.com/CrossFIRE121/AYSHackathon2020/blob/master/Screen%20Shot%202020-07-21%20at%2011.35.12%20PM.png)
+
+To rememdy this I had to add the line of code that prevents the bot from being botcepted, and that issue was no more. Below is another screenshot, showing the API in action, as stated, the conversations can be a bit weird, but they are usually not too bad.
