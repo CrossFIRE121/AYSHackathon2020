@@ -1,5 +1,5 @@
 # AYSHackathon2020
-My submission for AYS Hackathon 2020. Includes the readme, the index.js file, and that's about it.
+My submission for AYS Hackathon 2020. Includes the readme, the index.js file, and that's about it. The **prefix** is ays! and the command to get a list of commands is **ays!help.**
 
 # What is this?
 This is my submission for the Advertise Your Server Hackathon 2020 Event. This submission is a discord bot with several entertainment capabilites, including a Cleverbot PM chat that can be initated just by sending a message to the bot, a **decent** YouTube search option to pull videos from YouTube, an image search from Giphy, and a weather command.. It also includes some non-api calling features, such as a dice roll, and 8ball, funny jokes, and more.
