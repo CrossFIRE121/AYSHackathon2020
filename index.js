@@ -2,10 +2,10 @@ const Discord = require("discord.js"); //lines 1-13 is just a bunch of compilers
 const Cleverbot = require("cleverbot-node");
 const client = new Discord.Client();
 const clbot = new Cleverbot;
-clbot.configure({botapi: "CC7e8ESGNniBWBgJrGvDDGdnydA"});
+clbot.configure({botapi: "token-would-be-here"});
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
-const youtube = new YouTube("AIzaSyAHk5kkOysjoUX-ovfLnLqKtNIPqid99ng");
+const youtube = new YouTube("token-would-be-here");
 const queue = new Map();
 const search = require('youtube-search')
 const request = require("node-superfetch");
@@ -54,7 +54,7 @@ client.on("message", async message => { //<--this is the opening line for the bo
             type: 'video',
             maxResults: 1,
             q: query,
-            key: "AIzaSyAHk5kkOysjoUX-ovfLnLqKtNIPqid99ng" //all of this code essentially takes the query you searched, plugs it into a link, and pulls back a video on youtube pertaining to the search
+            key: "token-would-be-here" //all of this code essentially takes the query you searched, plugs it into a link, and pulls back a video on youtube pertaining to the search
           });
         if (!body.items.length) return funcs.send('No results found for ' + query + ".");
         const embed = new Discord.MessageEmbed()
@@ -70,7 +70,7 @@ client.on("message", async message => { //<--this is the opening line for the bo
         return message.channel.send(`Oh no, an error occurred: \`${err.message}\`. Try again later!`);
     }
     var GphApiClient = require('giphy-js-sdk-core')
-giphy = GphApiClient("p5l1h8Td14QqYRy84VAhndU8CgfmJjVc")
+giphy = GphApiClient("token-would-be-here")
     if (message.content.startsWith(`${prefix}gif`)) {
       
       giphy.search('gifs', { "q": message.content.substring(5) }).then((response) => {
@@ -135,4 +135,4 @@ giphy = GphApiClient("p5l1h8Td14QqYRy84VAhndU8CgfmJjVc")
 
 });
 
-client.login('NzM0OTMwOTE4OTgwMDU5MTUx.XxY3xw.Zo-GGNyCqS-ndz41C7-pqYZ1TbU')
+client.login('token-would-be-here')
