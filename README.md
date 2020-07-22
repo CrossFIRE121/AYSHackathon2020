@@ -21,4 +21,8 @@ Since the Cleverbot only works in the PMs of users, I set a command -- !cleverbo
 
 **YouTube Search**
 
-This one is a bit shaky but it gets the job done. This command calls on the YouTube Data V3 API to find what your query is using. The Node package **node-superfetch** to find the query from the command, then spit it at the API. The api then found the first result from the query, and gave it back in an embedded message. This one is fairly simple, but below is a screenshot showing the command in action.
+This one is a bit shaky but it gets the job done. This command calls on the YouTube Data V3 API to find what your query is saying. The Node package **node-superfetch** is used to find the query from the command, then spit it at the API. The api then finds a result from the query, and gives it back in an embedded message. This one is fairly simple, but below is a screenshot showing the command in action.
+
+![](https://github.com/CrossFIRE121/AYSHackathon2020/blob/master/screencap3.png)
+
+
