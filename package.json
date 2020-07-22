@@ -1,0 +1,22 @@
+{
+  "name": "AYS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cleverbot-node": "^0.3.11",
+    "discord.js": "^12.2.0",
+    "giphy-js-sdk-core": "^1.0.6",
+    "node-superfetch": "^0.1.10",
+    "simple-youtube-api": "^5.2.1",
+    "weather-js": "^2.0.0",
+    "youtube-search": "^1.1.4",
+    "ytdl-core": "^3.1.2"
+  }
+}
