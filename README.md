@@ -14,3 +14,11 @@ Sadly the Cleverbot API became a pay-to-use service a while back, luckily anyone
 ![](https://github.com/CrossFIRE121/AYSHackathon2020/blob/master/Screen%20Shot%202020-07-21%20at%2011.35.12%20PM.png)
 
 To rememdy this I had to add the line of code that prevents the bot from being botcepted, and that issue was no more. Below is another screenshot, showing the API in action, as stated, the conversations can be a bit weird, but they are usually not too bad.
+
+![](https://github.com/CrossFIRE121/AYSHackathon2020/blob/master/screencap2.png)
+
+Since the Cleverbot only works in the PMs of users, I set a command -- !cleverbot -- to alert people on how to use the Cleverbot.
+
+**YouTube Search**
+
+This one is a bit shaky but it gets the job done. This command calls on the YouTube Data V3 API to find what your query is using. The Node package **node-superfetch** to find the query from the command, then spit it at the API. The api then found the first result from the query, and gave it back in an embedded message. This one is fairly simple, but below is a screenshot showing the command in action.
