@@ -46,4 +46,7 @@ Most of these extra commands use the Math aspect of Discord.JS, meaning that if 
 # Hosting!
 Hosting a discord bot is a very important aspect of its uptime. Whether or not you're using AWS, Heroku, Cloud9, SkySilk, or others, these hosts make it very easy for you to have your discord bot running 24/7. My personal discord bot, along with this one, are being hosted by my Amazon EC2 instance. This instance is an Ubuntu 18.04 LTS build, and utilizes 1 core of processing power along with one gigabyte of RAM. The terminal is used for the VPS, and using PM2 to make sure when the bot crashes, if it were to, that it would restart the bot to keep alive. Since its Ubuntu and its a VPS, its very adaptive and doesnt suffer from limitations from node modules and packages. Since its considered a SFTP server by FileZilla, by accessing it from the .pem file given to me by Amazon, it is more than easy to add files to the server's SSD. I then can use the terminal on my computer to access the vps from the .pem file and control things such as node modules, pm2, and others. It is essentially another VPS and it is very easy to use if you know what you are doing.
 
+# Updates
+Mostly the updates were just updating code and the readme, but I recently revamped the code to be more organized and for the command handler to be put into place, it's been a struggle, but it's working so far.
+
 
