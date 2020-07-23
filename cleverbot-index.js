@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const Cleverbot = require("cleverbot-node");
 const client = new Discord.Client();
 const clbot = new Cleverbot;
-clbot.configure({botapi: "CC7e8ESGNniBWBgJrGvDDGdnydA"});
+clbot.configure({botapi: "token-would-be-here"});
  
 client.on("message", message => {
     if(message.author.bot) return;
