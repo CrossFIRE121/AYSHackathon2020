@@ -64,6 +64,11 @@ This is I use to access the files on the server.
 
 This is the pm2 chart showing the instances running on the server, the index2 and cleverbot-index instances are the bot, while the running index is my peresonal bot. The stopped index is the original code for this bot.
 
+# How do I host a bot using your method?
+Below are a bunch of embeds to videos I recorded showing the process, just watch those videos one by one to figure out how to host your bot on an EC2 instance.
+
+<iframe src="https://drive.google.com/file/d/1tTHacVPraM8_m9SfrjDt4HxR-V750H0O/preview" width="640" height="480"></iframe>
+
 
 # Updates
 Mostly the updates were just updating code and the readme, but I recently revamped the code to be more organized and for the command handler to be put into place, it's been a struggle, but it's working so far. 
