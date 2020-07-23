@@ -65,13 +65,38 @@ This is I use to access the files on the server.
 This is the pm2 chart showing the instances running on the server, the index2 and cleverbot-index instances are the bot, while the running index is my peresonal bot. The stopped index is the original code for this bot.
 
 # How do I host a bot using your method?
-Below are a bunch of embeds to videos I recorded showing the process, just watch those videos one by one to figure out how to host your bot on an EC2 instance.
+The process is very simple. 
+1. Head on over to https://ec2.amazon.com and click **get started.**
+2. Once you have linked a credit card (no money will be spent, trust me :)) go click on the button to create a new EC2 instance.
+3. It will ask you to create a new keyfile, also known as a .pem file. THIS FILE IS EXTREMELY IMPORTANT. DO NOT SHARE IT WITH ANYONE, EVER.
 
-<iframe src="https://drive.google.com/file/d/1tTHacVPraM8_m9SfrjDt4HxR-V750H0O/preview" width="640" height="480"></iframe>
+4. Once your instance is uploaded and ready to go, find its public IP address.
+![]()
+
+5. Once you have the .pem file downloaded, go into your terminal and type **chmod 400 <yourfile.pem>,** this makes it a private key so it can be accessed.
+![]()
+
+6. Type **sudo -i <yourfile.pem> and then ubuntu@yourip** to gain access to the VPS.
+![]()
+
+7. Type these three things into the terminal, **sudo apt-get update, sudo apt-get npm,** and **sudo apt-get nodejs.**
+
+8. Upload your node application to the server. You can do this with SFTP software like Cyberduck or FileZilla 2. The key is selecting “Use Public Key  Authentication” rather than enter a password. Once you have done that type **cd** into the terminal to make sure you are at the master root, then type **cd <your folder name)** to be put into that. Make sure the **node-modules** folder along with the **package.json** are in that folder. Then type **node install** to install the dependencies.
+![]()
+
+9. Type **node index (or whatever your main bot file is)** to make sure everything is working alright.
+
+10. Escape the terminal and repeat step 6 to regain access to the VPS.
+
+11. Go to the directory of your bot by doing **cd (your bot's directory)** and typing **sudo npm install -g pm2.**
+
+12. Type **pm2 start (bot file)** and it will start running automatically. You can exit the terminal.
+
+Hopefully you can understand everything I just said, its pretty easy once you get the hang of it, and best of all, VPS's are the best because they are fast, private and secure, and they are totally customizable for your bot!
 
 
 # Updates
-Mostly the updates were just updating code and the readme, but I recently revamped the code to be more organized and for the command handler to be put into place, it's been a struggle, but it's working so far. 
+Mostly the updates were just updating code and the readme, but I recently revamped the code to be more organized and for the command handler to be put into place, it's been a struggle, but it's working so far. Sorry if this is crappy and impossible to read, I wrote all of this at like, 3 in the morning because I have no life.
 
 
 ![](https://img.shields.io/apm/l/vim-mode)
