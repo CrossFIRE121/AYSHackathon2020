@@ -69,3 +69,7 @@ This is the pm2 chart showing the instances running on the server, the index2 an
 Mostly the updates were just updating code and the readme, but I recently revamped the code to be more organized and for the command handler to be put into place, it's been a struggle, but it's working so far. 
 
 
+![](https://img.shields.io/apm/l/vim-mode)
+![](https://img.shields.io/badge/build-passing-green)
+![](https://img.shields.io/badge/version-2.0.0-blue)
+
