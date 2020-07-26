@@ -71,18 +71,18 @@ The process is very simple.
 3. It will ask you to create a new keyfile, also known as a .pem file. THIS FILE IS EXTREMELY IMPORTANT. DO NOT SHARE IT WITH ANYONE, EVER.
 
 4. Once your instance is uploaded and ready to go, find its public IP address.
-![]()
+![](https://github.com/CrossFIRE121/AYSHackathon2020/blob/master/awsscreencap.png)
 
 5. Once you have the .pem file downloaded, go into your terminal and type **chmod 400 <yourfile.pem>,** this makes it a private key so it can be accessed.
-![]()
+![](https://github.com/CrossFIRE121/AYSHackathon2020/blob/master/awsscreencap2.png)
 
 6. Type **sudo -i <yourfile.pem> and then ubuntu@yourip** to gain access to the VPS.
-![]()
+![](https://github.com/CrossFIRE121/AYSHackathon2020/blob/master/awsscreencap3.png)
 
 7. Type these three things into the terminal, **sudo apt-get update, sudo apt-get npm,** and **sudo apt-get nodejs.**
 
 8. Upload your node application to the server. You can do this with SFTP software like Cyberduck or FileZilla 2. The key is selecting “Use Public Key  Authentication” rather than enter a password. Once you have done that type **cd** into the terminal to make sure you are at the master root, then type **cd <your folder name)** to be put into that. Make sure the **node-modules** folder along with the **package.json** are in that folder. Then type **node install** to install the dependencies.
-![]()
+![](https://github.com/CrossFIRE121/AYSHackathon2020/blob/master/awsscreencap4.png)
 
 9. Type **node index (or whatever your main bot file is)** to make sure everything is working alright.
 
